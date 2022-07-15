@@ -38,9 +38,9 @@ var level = 0;
 var startedGame = false;
 
 $('.start-btn').click(function (e) {
-    if (startedGame == false) {
+    if (startedGame === false) {
         newSequence();
-        startedGame == true;
+        startedGame = true;
         $('.start-btn').text('Enjoy');
     }
 });
@@ -112,7 +112,7 @@ function checkAnswer(currentLevel) {
 
 //9. and we have it . We can do the code but we cant win the game 😂
 function startOver() {
-    $('h1').text('Game Over, Press Start Button Again');
+    $('#level-title').text('Game Over, Press Start Button Again');
     $('.start-btn').text('Start');
     level = 0;
     startedGame = false;

@@ -75,7 +75,7 @@ body {
 	background-color: grey;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 	body {
 		margin: 100px 0;
 	}
